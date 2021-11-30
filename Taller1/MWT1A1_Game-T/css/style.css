@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Gluten&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round';
+    color:#222
+}
+nav, footer {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+}
+nav {
+    background: #003;
+    background: linear-gradient(90deg, #060606 15%, #118 50%, #0df 100%);
+    top: 0px;
+    padding-left: 30px;
+    margin-bottom: -75px;
+    font-weight: bold;
+    box-shadow: 0px 3px 3px #222;
+}
+img {
+    position: relative;
+    top: 4px;
+    animation: abc 4s linear infinite alternate;
+}
+@keyframes abc {
+      0% {transform: scaleX(1);}
+     80% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+nav h1 {
+    display: inline;
+    font-size: 25px;
+    color: #f2f2f2;
+    font-family: 'Gluten', cursive
+}
+nav a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #f2f2f2;
+}
+nav a.menu {
+    margin-left: 75px;
+}
+nav h1:hover, nav a:hover {
+    color: rgba(0,212,255);
+    transition: 0.3s;
+}
+section {
+    height: 100vh;
+}
+section h3 {
+    padding: 30px 60px;
+    padding-top: 110px;
+}
+section hr {
+    margin: 0px 100px;
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+}
+section p.pregunta {
+    margin: 30px 150px;
+    height: 35px;
+}
+section a {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 0px #888;
+}
+section a.verdadero {
+    margin-left: 150px;
+}
+section a.falso {
+    margin-left: 50px;
+}
+section.sin_seleccionar a {
+    background-color: #ddd;
+    transition: 0.2s;
+}
+section.sin_seleccionar a:hover {
+    background-color: #003;
+    color: #eee;
+}
+section.sin_seleccionar a:active {
+    transition: transform 0s;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: none;
+}
+section span {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f00;
+}
+section p.respuesta {
+    margin: 30px 150px;
+}
+section a.siguiente {
+    margin-left: 150px;
+    background-color: #bdf;
+    color: #00f;
+}
+section a.siguiente:hover {
+    background-color:rgb(0,212,255);
+    transition: 0.2s;
+}
+section a.siguiente:active {
+    transition: transform 0s;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: none;
+}
+footer {
+    bottom: 0px;
+    text-align: center;
+    background-color: #060606;
+}
+footer p {
+    color: #eee;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        padding-left: 10px;
+        margin-bottom: -75px;
+    }
+    nav a.menu {
+        margin-left: 25px;
+    }
+    section h3 {
+        padding: 100px 30px 0px 30px;
+        font-size: 15px;
+    }
+    section hr {
+        display: none;
+    }
+    section p.pregunta, section p.respuesta {
+        margin: 20px 30px;
+        font-size: 15px;
+    }
+    section p.pregunta {
+        height: 55px;
+    }
+    section a {
+        font-size: 15px;
+    }
+    section a.verdadero, section a.falso, section a.siguiente {
+        margin-left: 30px;
+    }
+}
